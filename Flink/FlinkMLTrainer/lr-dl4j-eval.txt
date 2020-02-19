@@ -1,0 +1,125 @@
+TRAIN columns:  30     TEST columns:  30
+TRAIN outcomes: 2      TEST outcomes: 2
+Train logistic regression DL4J model....
+Evaluate logistic regression DL4J model....
+
+
+========================Evaluation Metrics========================
+ # of classes:    2
+ Accuracy:        0.9980
+ Precision:       1.0000
+ Recall:          0.9969
+ F1 Score:        0.9985
+Precision, recall & F1: reported for positive class (class 1 - "1") only
+
+
+=========================Confusion Matrix=========================
+    0    1
+-----------
+  665    0 | 0 = 0
+    4 1299 | 1 = 1
+
+Confusion matrix format: Actual (rowClass) predicted as (columnClass) N times
+==================================================================
+Save logistic regression DL4j model...
+Predictions for logistic regression DL4j model...
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.001, 0.999
+Prediction: 0 --- Actual: 0 -- Probabilities: 0.995, 0.005
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.001, 0.999
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.193, 0.807
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 0.995, 0.005
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 0.999, 0.001
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.001, 0.999
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.002, 0.998
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 0.875, 0.125
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+Prediction: 0 --- Actual: 0 -- Probabilities: 1.000, 0.000
+Prediction: 1 --- Actual: 1 -- Probabilities: 0.000, 1.000
+**************** Finished********************

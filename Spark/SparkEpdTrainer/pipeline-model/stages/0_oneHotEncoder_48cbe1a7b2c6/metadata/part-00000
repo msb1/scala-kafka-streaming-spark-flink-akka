@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.OneHotEncoderModel","timestamp":1576528798814,"sparkVersion":"2.4.4","uid":"oneHotEncoder_48cbe1a7b2c6","paramMap":{"inputCols":["cat0","cat1","cat2","cat3","cat4","cat5","cat6","cat7"],"outputCols":["cat0Vec","cat1Vec","cat2Vec","cat3Vec","cat4Vec","cat5Vec","cat6Vec","cat7Vec"]},"defaultParamMap":{"handleInvalid":"error","dropLast":true}}

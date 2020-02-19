@@ -1,0 +1,58 @@
+apply plugin: 'scala'
+apply plugin: 'application'
+
+repositories{
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies{
+    // scala dependencies
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.26'
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.10'
+    compile group: 'org.scala-lang.modules', name: 'scala-collection-compat_2.12', version: '2.1.1'
+    compile group: 'com.typesafe.akka', name: 'akka-actor_2.12', version: '2.5.25'
+    compile group: 'com.typesafe.akka', name: 'akka-stream_2.12', version: '2.5.25'
+    compile group: 'com.typesafe.akka', name: 'akka-stream-typed_2.12', version: '2.5.25'
+
+    // kafka dependencies
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.3.0'
+    compile group: 'com.typesafe.akka', name: 'akka-stream-kafka_2.12', version: '1.0.5'
+
+    // jackson (json) dependencies
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.9.3'
+    compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-scala_2.12', version: '2.9.9'
+
+    // rocks db dependency
+    compile group: 'org.rocksdb', name: 'rocksdbjni', version: '6.2.4'
+
+    // deeplearning4j dependencies
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '1.0.0-beta6'
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-nn', version: '1.0.0-beta6'
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-ui', version: '1.0.0-beta6'
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-modelimport', version: '1.0.0-beta6'
+    compile group: 'org.nd4j', name: 'nd4j-native-platform', version: '1.0.0-beta6'
+
+    testCompile group: 'org.deeplearning4j', name: 'deeplearning4j-datasets', version: '1.0.0-beta6'
+
+    // xgboost dependency
+    compile group: 'ml.dmlc', name: 'xgboost4j', version: '0.90'
+
+    // libsvm dependency
+    compile group: 'tw.edu.ntu.csie', name: 'libsvm', version: '3.24'
+
+    // other dependency
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+
+    // test dependencies
+    testCompile "junit:junit:4.12"
+    testCompile group: 'org.scalatest', name: 'scalatest_2.12', version: '3.0.8'
+    testCompile group: 'com.typesafe.akka', name: 'akka-testkit_2.12', version: '2.5.25'
+    testCompile group: 'org.apache.kafka', name: 'kafka-streams-test-utils', version: '2.3.0'
+
+}
+
+mainClassName = 'Main'
+
+

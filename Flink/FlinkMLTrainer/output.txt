@@ -1,0 +1,120 @@
+Start Flink ML Trainer with DL4j, XGBoost and LibSVM...
+
+***********************************************************************************************************
+
+Number of records read from edp01 MongoDB: 9838
+
+***********************************************************************************************************
+
+Evaluate Deeplearning4j Logistic Regression (One fully connected layer)
+19:42:18.954 [main] WARN org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory - *********************************** CPU Feature Check Warning ***********************************
+19:42:18.957 [main] WARN org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory - Warning: Initializing ND4J with Generic x86 binary on a CPU with AVX/AVX2 support
+19:42:18.957 [main] WARN org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory - Using ND4J with AVX/AVX2 will improve performance. See deeplearning4j.org/cpu for more details
+19:42:18.957 [main] WARN org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory - Or set environment variable ND4J_IGNORE_AVX=true to suppress this warning
+19:42:18.957 [main] WARN org.nd4j.linalg.cpu.nativecpu.CpuNDArrayFactory - *************************************************************************************************
+TRAIN columns:  30     TEST columns:  30
+TRAIN outcomes: 2      TEST outcomes: 2
+Train logistic regression DL4J model....
+Check predictions for logistic regression DL4J model....
+
+
+========================Evaluation Metrics========================
+ # of classes:    2
+ Accuracy:        0.9980
+ Precision:       1.0000
+ Recall:          0.9969
+ F1 Score:        0.9985
+Precision, recall & F1: reported for positive class (class 1 - "1") only
+
+
+=========================Confusion Matrix=========================
+    0    1
+-----------
+  665    0 | 0 = 0
+    4 1299 | 1 = 1
+
+Confusion matrix format: Actual (rowClass) predicted as (columnClass) N times
+==================================================================
+Save logistic regression DL4j model...
+Check predictions for reloaded logistic regression DL4j model...
+
+
+========================Evaluation Metrics========================
+ # of classes:    2
+ Accuracy:        0.9980
+ Precision:       1.0000
+ Recall:          0.9969
+ F1 Score:        0.9985
+Precision, recall & F1: reported for positive class (class 1 - "1") only
+
+
+=========================Confusion Matrix=========================
+    0    1
+-----------
+  665    0 | 0 = 0
+    4 1299 | 1 = 1
+
+Confusion matrix format: Actual (rowClass) predicted as (columnClass) N times
+==================================================================
+
+***********************************************************************************************************
+
+Evaluate Gradient Boosted Tree XGBoost model....
+Save Gradient Boosted Tree XGBoost model....
+Predictions for Gradient Boosted Tree XGBoost model....
+Feature Score:
+Map(sensor4 -> 1, cat50 -> 2, sensor2 -> 1, cat40 -> 4, cat30 -> 8, cat52 -> 2, cat10 -> 2, cat00 -> 5, cat12 -> 1, sensor0 -> 2, sensor1 -> 1, cat70 -> 5)
+
+Gain:
+Map(sensor0 -> 36.82598875, cat70 -> 1723.2970608199998, cat50 -> 20.77783205, cat12 -> 54.3276367, sensor1 -> 42.9744873, sensor2 -> 63.5322266, cat40 -> 81.69928927500001, sensor4 -> 43.0592041, cat52 -> 39.350799550000005, cat30 -> 686.155606125, cat10 -> 13.115325934, cat00 -> 114.07201993999999)
+
+Cover:
+Map(sensor0 -> 353.165909, cat70 -> 1100.84986858, cat50 -> 888.097105, cat12 -> 1195.0, sensor1 -> 582.283142, sensor2 -> 633.75, cat40 -> 234.451301575, sensor4 -> 490.864349, cat52 -> 924.3591935, cat30 -> 711.8979187374999, cat10 -> 832.390198, cat00 -> 167.51973884)
+
+Training Round 0: Train AUC = 0.993   Test AUC = 0.995
+Training Round 1: Train AUC = 0.997   Test AUC = 0.998
+Training Round 2: Train AUC = 0.998   Test AUC = 0.999
+Training Round 3: Train AUC = 0.999   Test AUC = 0.999
+Training Round 4: Train AUC = 1.000   Test AUC = 1.000
+
+Predicted Accuracies: 0.991, 0.991  (Predicted, Reloaded Predicted)
+
+***********************************************************************************************************
+
+Evaluate Random Forest XGBoost model....
+Save Random Forest XGBoost model....
+Predictions for Random Forest XGBoost model....
+Feature Score:
+Map(cat70 -> 338, sensor4 -> 92, cat71 -> 2, cat50 -> 172, sensor5 -> 137, sensor2 -> 170, cat40 -> 313, cat30 -> 421, cat52 -> 258, sensor3 -> 73, cat31 -> 13, sensor8 -> 69, cat53 -> 17, cat10 -> 216, sensor9 -> 54, cat21 -> 1, cat00 -> 299, sensor6 -> 52, cat12 -> 251, sensor7 -> 107, sensor0 -> 250, sensor1 -> 60)
+
+Gain:
+Map(sensor0 -> 22.37604636102478, cat70 -> 1036.5919477016303, sensor5 -> 23.836423778826294, cat50 -> 14.039551247133735, sensor9 -> 10.327645549772225, cat12 -> 23.773529651197194, sensor1 -> 10.66935982431167, sensor8 -> 13.55813993284058, sensor2 -> 28.552780941306455, cat40 -> 140.59366700710865, sensor4 -> 33.81049222824999, sensor7 -> 15.471647275352801, cat52 -> 21.254868379307354, cat30 -> 425.5923058962203, cat21 -> 0.115296364, sensor3 -> 9.139040539123286, cat10 -> 15.494446984883801, cat00 -> 145.0548528588929, cat71 -> 0.270907402, sensor6 -> 12.283858118976921, cat53 -> 13.554982461176468, cat31 -> 11.928555659615387)
+
+Cover:
+Map(sensor0 -> 130.26171205991994, cat70 -> 527.1915647695555, sensor5 -> 88.98303423576643, cat50 -> 248.46378137831377, sensor9 -> 40.99023622277778, cat12 -> 271.12625785071737, sensor1 -> 57.950293618666656, sensor8 -> 48.64019055304348, sensor2 -> 212.31377588211757, cat40 -> 231.6747991272523, sensor4 -> 136.98126744249998, sensor7 -> 82.25753590205608, cat52 -> 216.03214974174432, cat30 -> 400.13531170030893, cat21 -> 9.95851231, sensor3 -> 42.40735658561645, cat10 -> 239.9315556768518, cat00 -> 187.4930939151504, cat71 -> 10.921712865, sensor6 -> 55.87285018076921, cat53 -> 42.77250779705883, cat31 -> 98.7294477653846)
+
+Training Round 0: Train AUC = 0.999   Test AUC = 0.999
+Training Round 1: Train AUC = 1.000   Test AUC = 1.000
+Training Round 2: Train AUC = 1.000   Test AUC = 1.000
+Training Round 3: Train AUC = 1.000   Test AUC = 1.000
+Training Round 4: Train AUC = 1.000   Test AUC = 1.000
+
+Predicted Accuracies: 0.998, 0.991  (Predicted, Reloaded Predicted)
+
+***********************************************************************************************************
+
+Evaluate LIBSVM model....
+Number of training samples: 7870  (7870)
+Train LIBSVM model and save to file....
+*
+optimization finished, #iter = 545
+nu = 0.018595652663114727
+obj = -193.05738301973562, rho = 1.440622924331472
+nSV = 165, nBSV = 121
+Total nSV = 165
+Number of test samples: 1968    Counters: 7862   1962   1962
+LIBSVM model Results:
+SVM accuracies:  Train = 0.999   Test = 0.997  Test(reloaded) = 0.997
+
+******************************************** FINISHED *****************************************************
+

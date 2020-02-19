@@ -1,0 +1,41 @@
+apply plugin: 'scala'
+apply plugin: 'application'
+
+repositories{
+    mavenCentral()
+    mavenLocal()
+}
+
+//compileScala { // or: tasks.withType(ScalaCompile)
+//    scalaCompileOptions.additionalParameters = ["-feature"]
+//}
+
+dependencies{
+    // scala dependencies
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.26'
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.10'
+    compile group: 'com.typesafe.akka', name: 'akka-actor_2.12', version: '2.5.25'
+    compile group: 'com.typesafe.akka', name: 'akka-stream_2.12', version: '2.5.25'
+    compile group: 'com.typesafe.akka', name: 'akka-stream-typed_2.12', version: '2.5.25'
+
+    // kafka dependencies
+    compile group: 'com.typesafe.akka', name: 'akka-stream-kafka_2.12', version: '1.0.5'
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.1.1'
+    compile group: 'org.scala-lang.modules', name: 'scala-collection-compat_2.12', version: '2.1.1'
+
+    // jackson (json) dependencies
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.1'
+    compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-scala_2.12', version: '2.10.1'
+
+    // logback dependency
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+
+    // test dependencies
+    testCompile "junit:junit:4.12"
+    testCompile group: 'org.scalatest', name: 'scalatest_2.12', version: '3.0.8'
+    testCompile group: 'com.typesafe.akka', name: 'akka-testkit_2.12', version: '2.5.25'
+}
+
+mainClassName = 'Main'
+
+
