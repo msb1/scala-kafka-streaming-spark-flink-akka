@@ -1,0 +1,153 @@
+alrt:
+- alarm: 80.0
+  atype: alert
+  id: 1
+  incr: true
+  name: alert1
+  warn: 45.0
+- alarm: 780.0
+  atype: warn
+  id: 2
+  incr: false
+  name: warn2
+  warn: 340.0
+- alarm: 90.0
+  atype: alarm
+  id: 3
+  incr: false
+  name: alarm3
+  warn: 50.0
+- alarm: 100.0
+  atype: warn
+  id: 4
+  incr: false
+  name: warn4
+  warn: 34.0
+- alarm: 80.0
+  atype: alert
+  id: 5
+  incr: true
+  name: alert1
+  warn: 45.0
+cont:
+- dist: uni
+  id: 1
+  max: 100.0
+  min: 0.0
+  name: sens11
+  neg1: 70.0
+  neg2: 100.0
+  pos1: 10.0
+  pos2: 80.0
+- dist: norm
+  id: 2
+  max: 200.0
+  min: 10.0
+  name: sens12
+  neg1: 80.0
+  neg2: 20.0
+  pos1: 40.0
+  pos2: 20.0
+- dist: log
+  id: 3
+  max: 250.0
+  min: 0.0
+  name: sens13
+  neg1: 10.0
+  neg2: 10.0
+  pos1: 5.0
+  pos2: 10.0
+- dist: uni
+  id: 4
+  max: 400.0
+  min: 0.0
+  name: sens14
+  neg1: 10.0
+  neg2: 300.0
+  pos1: 250.0
+  pos2: 400.0
+- dist: uni
+  id: 5
+  max: 350.0
+  min: 50.0
+  name: sens15
+  neg1: 200.0
+  neg2: 350.0
+  pos1: 50.0
+  pos2: 300.0
+- dist: norm
+  id: 6
+  max: 250.0
+  min: 0.0
+  name: sens16
+  neg1: 100.0
+  neg2: 40.0
+  pos1: 50.0
+  pos2: 20.0
+- dist: norm
+  id: 7
+  max: 500.0
+  min: 50.0
+  name: sens17
+  neg1: 400.0
+  neg2: 50.0
+  pos1: 200.0
+  pos2: 40.0
+- dist: uni
+  id: 8
+  max: 350.0
+  min: 100.0
+  name: sens18
+  neg1: 100.0
+  neg2: 250.0
+  pos1: 200.0
+  pos2: 350.0
+- dist: log
+  id: 9
+  max: 50.0
+  min: 0.0
+  name: sens19
+  neg1: 10.0
+  neg2: 5.0
+  pos1: 1.0
+  pos2: 4.0
+disc:
+- id: 1
+  levels: fail, pass
+  name: disc11
+  neg: 0.9, 0.1
+  num: 2
+  pos: 0.1, 0.9
+- id: 2
+  levels: negative, neutral, positive
+  name: disc12
+  neg: 0.8, 0.2, 0.0
+  num: 3
+  pos: 0.2, 0.4, 0.4
+- id: 3
+  levels: off, hold, run
+  name: disc13
+  neg: 0.6, 0.4, 0.0
+  num: 3
+  pos: 0.2, 0.2, 0.6
+- id: 4
+  levels: good, bad
+  name: disc14
+  neg: 0.3, 0.7
+  num: 2
+  pos: 0.7, 0.3
+- id: 5
+  levels: veryneg, neg, neut, pos, verypos
+  name: disc15
+  neg: 0.6, 0.2, 0.2, 0.0, 0.0
+  num: 5
+  pos: 0.0, 0.1, 0.3, 0.3, 0.3
+- id: 6
+  levels: negative, neutral, positive
+  name: disc16
+  neg: 0.6, 0.3, 0.1
+  num: 3
+  pos: 0.1, 0.5, 0.4
+err: 0.08
+name: scanner
+success: 0.6

@@ -1,0 +1,156 @@
+alrt:
+- alarm: 100.0
+  atype: warn
+  id: 20
+  incr: false
+  name: warn4
+  warn: 34.0
+- alarm: 80.0
+  atype: alert
+  id: 21
+  incr: true
+  name: alert1
+  warn: 45.0
+- alarm: 780.0
+  atype: warn
+  id: 22
+  incr: false
+  name: warn2
+  warn: 340.0
+- alarm: 90.0
+  atype: alarm
+  id: 23
+  incr: false
+  name: alarm3
+  warn: 50.0
+- alarm: 100.0
+  atype: warn
+  id: 24
+  incr: false
+  name: warn4
+  warn: 34.0
+cont:
+- dist: uni
+  id: 36
+  max: 350.0
+  min: 50.0
+  name: sensEE1
+  neg1: 150.0
+  neg2: 350.0
+  pos1: 50.0
+  pos2: 200.0
+- dist: uni
+  id: 37
+  max: 400.0
+  min: 0.0
+  name: sensEE2
+  neg1: 190.0
+  neg2: 350.0
+  pos1: 25.0
+  pos2: 200.0
+- dist: uni
+  id: 38
+  max: 350.0
+  min: 50.0
+  name: sensEE3
+  neg1: 150.0
+  neg2: 300.0
+  pos1: 50.0
+  pos2: 200.0
+- dist: norm
+  id: 39
+  max: 250.0
+  min: 0.0
+  name: sensEE4
+  neg1: 120.0
+  neg2: 20.0
+  pos1: 70.0
+  pos2: 10.0
+- dist: norm
+  id: 40
+  max: 250.0
+  min: 0.0
+  name: sensEE5
+  neg1: 100.0
+  neg2: 25.0
+  pos1: 50.0
+  pos2: 10.0
+- dist: norm
+  id: 41
+  max: 500.0
+  min: 50.0
+  name: sensEE6
+  neg1: 200.0
+  neg2: 20.0
+  pos1: 100.0
+  pos2: 10.0
+- dist: uni
+  id: 42
+  max: 350.0
+  min: 100.0
+  name: sensEE7
+  neg1: 100.0
+  neg2: 250.0
+  pos1: 200.0
+  pos2: 350.0
+- dist: log
+  id: 43
+  max: 50.0
+  min: 0.0
+  name: sensEE8
+  neg1: 5.0
+  neg2: 3.0
+  pos1: 1.0
+  pos2: 3.0
+- dist: uni
+  id: 44
+  max: 600.0
+  min: 100.0
+  name: sensEE9
+  neg1: 350.0
+  neg2: 500.0
+  pos1: 100.0
+  pos2: 400.0
+- dist: uni
+  id: 45
+  max: 15.0
+  min: 0.0
+  name: sensEE10
+  neg1: 7.0
+  neg2: 15.0
+  pos1: 2.0
+  pos2: 10.0
+disc:
+- id: 27
+  levels: fail, pass
+  name: discEE1
+  neg: 0.5, 0.5
+  num: 2
+  pos: 0.15, 0.85
+- id: 28
+  levels: negative, neutral, positive
+  name: discEE2
+  neg: 0.6, 0.2, 0.2
+  num: 3
+  pos: 0.3, 0.4, 0.3
+- id: 29
+  levels: off, hold, run
+  name: discEE3
+  neg: 0.5, 0.4, 0.1
+  num: 3
+  pos: 0.1, 0.2, 0.7
+- id: 30
+  levels: good, bad
+  name: discEE4
+  neg: 0.3, 0.7
+  num: 2
+  pos: 0.6, 0.4
+- id: 31
+  levels: veryneg, neg, neut, pos, verypos
+  name: discEE5
+  neg: 0.4, 0.4, 0.1, 0.1, 0.0
+  num: 5
+  pos: 0.0, 0.1, 0.5, 0.3, 0.1
+err: 0.11
+name: clean
+success: 0.65

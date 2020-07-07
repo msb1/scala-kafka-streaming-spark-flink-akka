@@ -1,0 +1,183 @@
+alrt:
+- alarm: 780.0
+  atype: warn
+  id: 6
+  incr: false
+  name: warn2
+  warn: 340.0
+- alarm: 90.0
+  atype: alarm
+  id: 7
+  incr: false
+  name: alarm3
+  warn: 50.0
+- alarm: 100.0
+  atype: warn
+  id: 8
+  incr: false
+  name: warn4
+  warn: 34.0
+- alarm: 80.0
+  atype: alert
+  id: 9
+  incr: true
+  name: alert1
+  warn: 45.0
+cont:
+- dist: uni
+  id: 10
+  max: 100.0
+  min: 0.0
+  name: sensB1
+  neg1: 70.0
+  neg2: 100.0
+  pos1: 10.0
+  pos2: 80.0
+- dist: norm
+  id: 11
+  max: 200.0
+  min: 10.0
+  name: sensB2
+  neg1: 80.0
+  neg2: 20.0
+  pos1: 40.0
+  pos2: 20.0
+- dist: log
+  id: 12
+  max: 250.0
+  min: 0.0
+  name: sensB3
+  neg1: 10.0
+  neg2: 10.0
+  pos1: 5.0
+  pos2: 10.0
+- dist: uni
+  id: 13
+  max: 400.0
+  min: 0.0
+  name: sensB4
+  neg1: 10.0
+  neg2: 300.0
+  pos1: 250.0
+  pos2: 400.0
+- dist: uni
+  id: 14
+  max: 350.0
+  min: 50.0
+  name: sensB5
+  neg1: 200.0
+  neg2: 350.0
+  pos1: 50.0
+  pos2: 300.0
+- dist: norm
+  id: 15
+  max: 250.0
+  min: 0.0
+  name: sensB6
+  neg1: 100.0
+  neg2: 40.0
+  pos1: 50.0
+  pos2: 20.0
+- dist: norm
+  id: 16
+  max: 500.0
+  min: 50.0
+  name: sensB7
+  neg1: 400.0
+  neg2: 50.0
+  pos1: 200.0
+  pos2: 40.0
+- dist: uni
+  id: 17
+  max: 350.0
+  min: 100.0
+  name: sensB8
+  neg1: 100.0
+  neg2: 250.0
+  pos1: 200.0
+  pos2: 350.0
+- dist: log
+  id: 18
+  max: 50.0
+  min: 0.0
+  name: sensB9
+  neg1: 10.0
+  neg2: 5.0
+  pos1: 1.0
+  pos2: 4.0
+- dist: uni
+  id: 19
+  max: 600.0
+  min: 100.0
+  name: sensB10
+  neg1: 100.0
+  neg2: 400.0
+  pos1: 200.0
+  pos2: 500.0
+- dist: uni
+  id: 20
+  max: 50.0
+  min: 0.0
+  name: sensB11
+  neg1: 25.0
+  neg2: 45.0
+  pos1: 2.0
+  pos2: 35.0
+disc:
+- id: 7
+  levels: fail, pass
+  name: discB1
+  neg: 0.8, 0.2
+  num: 2
+  pos: 0.2, 0.8
+- id: 8
+  levels: negative, neutral, positive
+  name: discB2
+  neg: 0.7, 0.3, 0.0
+  num: 3
+  pos: 0.3, 0.4, 0.3
+- id: 9
+  levels: off, hold, run
+  name: discB3
+  neg: 0.6, 0.3, 1.0
+  num: 3
+  pos: 0.1, 0.4, 0.5
+- id: 10
+  levels: good, bad
+  name: discB4
+  neg: 0.3, 0.7
+  num: 2
+  pos: 0.65, 0.35
+- id: 11
+  levels: veryneg, neg, neut, pos, verypos
+  name: discB5
+  neg: 0.6, 0.2, 0.2, 0.0, 0.0
+  num: 5
+  pos: 0.0, 0.1, 0.3, 0.3, 0.3
+- id: 12
+  levels: negative, neutral, positive
+  name: discB6
+  neg: 0.5, 0.3, 0.2
+  num: 3
+  pos: 0.3, 0.3, 0.4
+- id: 13
+  levels: good, bad
+  name: discB7
+  neg: 0.2, 0.8
+  num: 2
+  pos: 0.6, 0.4
+- id: 14
+  levels: veryneg, neg, neut, pos, verypos
+  name: discB8
+  neg: 0.4, 0.4, 0.2, 1.0, 0.0
+  num: 5
+  pos: 0.0, 0.1, 0.3, 0.3, 0.3
+- id: 15
+  levels: negative, neutral, positive
+  name: discB9
+  neg: 0.4, 0.4, 0.2
+  num: 3
+  pos: 0.2, 0.4, 0.4
+err: 0.07
+name: printer
+success: 0.55

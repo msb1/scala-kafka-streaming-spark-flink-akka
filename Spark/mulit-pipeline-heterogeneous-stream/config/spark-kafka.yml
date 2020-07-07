@@ -1,0 +1,4 @@
+bootstrap-server: xxx.xxx.xxx.x:9092
+producer-topic: hub
+consumer-topic: svc
+

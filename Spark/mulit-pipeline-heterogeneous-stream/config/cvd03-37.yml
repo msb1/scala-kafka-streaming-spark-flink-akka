@@ -1,0 +1,144 @@
+alrt:
+- alarm: 90.0
+  atype: alarm
+  id: 15
+  incr: false
+  name: alarm3
+  warn: 50.0
+- alarm: 100.0
+  atype: warn
+  id: 16
+  incr: false
+  name: warn4
+  warn: 34.0
+- alarm: 80.0
+  atype: alert
+  id: 17
+  incr: true
+  name: alert1
+  warn: 45.0
+- alarm: 780.0
+  atype: warn
+  id: 18
+  incr: false
+  name: warn2
+  warn: 340.0
+- alarm: 90.0
+  atype: alarm
+  id: 19
+  incr: false
+  name: alarm3
+  warn: 50.0
+cont:
+- dist: log
+  id: 28
+  max: 20.0
+  min: 0.0
+  name: sensD1
+  neg1: 3.0
+  neg2: 3.0
+  pos1: 1.0
+  pos2: 2.0
+- dist: uni
+  id: 29
+  max: 65.0
+  min: 0.0
+  name: sensD2
+  neg1: 40.0
+  neg2: 65.0
+  pos1: 25.0
+  pos2: 50.0
+- dist: uni
+  id: 30
+  max: 350.0
+  min: 50.0
+  name: sensD3
+  neg1: 150.0
+  neg2: 350.0
+  pos1: 50.0
+  pos2: 200.0
+- dist: uni
+  id: 31
+  max: 400.0
+  min: 0.0
+  name: sensD4
+  neg1: 190.0
+  neg2: 350.0
+  pos1: 25.0
+  pos2: 200.0
+- dist: uni
+  id: 32
+  max: 350.0
+  min: 50.0
+  name: sensD5
+  neg1: 150.0
+  neg2: 300.0
+  pos1: 50.0
+  pos2: 200.0
+- dist: norm
+  id: 33
+  max: 250.0
+  min: 0.0
+  name: sensD6
+  neg1: 100.0
+  neg2: 40.0
+  pos1: 50.0
+  pos2: 20.0
+- dist: norm
+  id: 34
+  max: 100.0
+  min: 0.0
+  name: sensD7
+  neg1: 20.0
+  neg2: 40.0
+  pos1: 10.0
+  pos2: 2.0
+- dist: uni
+  id: 35
+  max: 350.0
+  min: 100.0
+  name: sensD8
+  neg1: 100.0
+  neg2: 250.0
+  pos1: 200.0
+  pos2: 350.0
+disc:
+- id: 21
+  levels: good, bad
+  name: discD1
+  neg: 0.36, 0.64
+  num: 2
+  pos: 0.68, 0.32
+- id: 22
+  levels: good, bad
+  name: discD2
+  neg: 0.3, 0.7
+  num: 2
+  pos: 0.81, 0.19
+- id: 23
+  levels: veryneg, neg, neut, pos, verypos
+  name: discD3
+  neg: 0.5, 0.2, 0.2, 0.1, 0.0
+  num: 5
+  pos: 0.0, 0.2, 0.4, 0.2, 0.2
+- id: 24
+  levels: negative, neutral, positive
+  name: discD4
+  neg: 0.6, 0.3, 0.1
+  num: 3
+  pos: 0.2, 0.3, 0.5
+- id: 25
+  levels: veryneg, neg, neut, pos, verypos
+  name: discD5
+  neg: 0.4, 0.4, 0.2, 1.0, 0.0
+  num: 5
+  pos: 0.0, 0.1, 0.3, 0.3, 0.3
+- id: 26
+  levels: negative, neutral, positive
+  name: discD6
+  neg: 0.4, 0.4, 0.2
+  num: 3
+  pos: 0.2, 0.4, 0.4
+err: 0.04
+name: cvd
+success: 0.4

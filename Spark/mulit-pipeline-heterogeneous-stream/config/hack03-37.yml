@@ -1,0 +1,129 @@
+alrt:
+- alarm: 780.0
+  atype: warn
+  id: 10
+  incr: false
+  name: warn2
+  warn: 340.0
+- alarm: 90.0
+  atype: alarm
+  id: 11
+  incr: false
+  name: alarm3
+  warn: 50.0
+- alarm: 100.0
+  atype: warn
+  id: 12
+  incr: false
+  name: warn4
+  warn: 34.0
+- alarm: 80.0
+  atype: alert
+  id: 13
+  incr: true
+  name: alert1
+  warn: 45.0
+- alarm: 780.0
+  atype: warn
+  id: 14
+  incr: false
+  name: warn2
+  warn: 340.0
+cont:
+- dist: uni
+  id: 21
+  max: 10.0
+  min: 0.0
+  name: sens31
+  neg1: 5.0
+  neg2: 10.0
+  pos1: 1.0
+  pos2: 5.0
+- dist: norm
+  id: 22
+  max: 200.0
+  min: 10.0
+  name: sens32
+  neg1: 40.0
+  neg2: 20.0
+  pos1: 20.0
+  pos2: 10.0
+- dist: log
+  id: 23
+  max: 250.0
+  min: 0.0
+  name: sens33
+  neg1: 20.0
+  neg2: 10.0
+  pos1: 5.0
+  pos2: 10.0
+- dist: uni
+  id: 24
+  max: 400.0
+  min: 0.0
+  name: sens34
+  neg1: 10.0
+  neg2: 300.0
+  pos1: 250.0
+  pos2: 400.0
+- dist: uni
+  id: 25
+  max: 350.0
+  min: 50.0
+  name: sens35
+  neg1: 150.0
+  neg2: 350.0
+  pos1: 50.0
+  pos2: 200.0
+- dist: norm
+  id: 26
+  max: 250.0
+  min: 0.0
+  name: sens36
+  neg1: 100.0
+  neg2: 40.0
+  pos1: 50.0
+  pos2: 20.0
+- dist: norm
+  id: 27
+  max: 500.0
+  min: 50.0
+  name: sens37
+  neg1: 400.0
+  neg2: 50.0
+  pos1: 200.0
+  pos2: 40.0
+disc:
+- id: 16
+  levels: off, hold, run
+  name: disc31
+  neg: 0.6, 0.4, 0.0
+  num: 3
+  pos: 0.2, 0.2, 0.6
+- id: 17
+  levels: good, bad
+  name: disc32
+  neg: 0.3, 0.7
+  num: 2
+  pos: 0.8, 0.2
+- id: 18
+  levels: veryneg, neg, neut, pos, verypos
+  name: disc33
+  neg: 0.6, 0.2, 0.2, 0.0, 0.0
+  num: 5
+  pos: 0.0, 0.1, 0.3, 0.3, 0.3
+- id: 19
+  levels: negative, neutral, positive
+  name: disc34
+  neg: 0.5, 0.3, 0.2
+  num: 3
+  pos: 0.3, 0.3, 0.4
+- id: 20
+  levels: good, bad
+  name: disc35
+  neg: 0.2, 0.8
+  num: 2
+  pos: 0.6, 0.4
+err: 0.1
+name: hacker
+success: 0.45
