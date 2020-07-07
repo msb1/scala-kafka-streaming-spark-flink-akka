@@ -1,5 +1,5 @@
-<h4> scala-kafka-streaming-spark-flink-akka<h4/>
-<h5>Data streaming to/from three major event/processing frameworks</h5>
+<h2> scala-kafka-streaming-spark-flink-akka<h2/>
+<h3>Data streaming to/from three major event/processing frameworks</h3>
 <ol>
     <li><h6>Spark Structured Streaming</h6>
     <ul>
